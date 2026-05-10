@@ -13,13 +13,12 @@ import { PaywallBanner } from '@/components/PaywallBanner'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
-// TODO: アプリ名・descriptionを書き換える
 export const metadata: Metadata = {
-  title: '【アプリ名】 | 無料ツール',
-  description: '【SEO説明文（日本語＋English hybrid推奨）】',
+  title: 'YouTubeサムネイル取得ツール | 4解像度・無料・URLを貼るだけ',
+  description: 'YouTubeのURLを貼るだけで、最高画質(1280×720)・SD・HQ・MQの4解像度のサムネイル画像をワンクリックで取得・ダウンロードできる無料ツール。スマホ対応。Free YouTube thumbnail downloader.',
   openGraph: {
-    title: '【アプリ名】 | 無料ツール',
-    description: '【OGP説明文】',
+    title: 'YouTubeサムネイル取得ツール | 4解像度・無料',
+    description: 'YouTubeのURLを貼るだけで4解像度のサムネ画像を即取得。スマホでもダウンロード可。',
     type: 'website',
   },
 }
