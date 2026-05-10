@@ -18,6 +18,8 @@ export function HowToDrawer() {
       )}
 
       {/* サイドパネル本体 */}
+      {/* 閉じている間は inert で focus / AT を完全に切る（aria-hidden だけだと内部のボタンが
+          フォーカス可能のままで Lighthouse の aria-hidden-focus に抵触するため） */}
       <aside
         className={`
           fixed top-0 right-0 h-full w-full md:w-[420px]
@@ -26,7 +28,7 @@ export function HowToDrawer() {
           transition-transform duration-300 ease-in-out
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         `}
-        aria-hidden={!isOpen}
+        inert={!isOpen}
       >
         {/* パネルヘッダー */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-blue-700 bg-blue-600 flex-shrink-0">
